@@ -23,6 +23,7 @@ import steelPlatesImg from "@/assets/steel-plates.jpg";
 import hrcCrcImg from "@/assets/hrc-crc.jpg";
 import instrCablesImg from "@/assets/instrumentation-cables.jpg";
 import tubularBulbImg from "@/assets/tubular-bulb.jpg";
+import diffusersImg from "@/assets/diffusers.jpg";
 import gasketsImg from "@/assets/gaskets.jpg";
 import weldingImg from "@/assets/welding.jpg";
 import handToolsImg from "@/assets/hand-tools.jpg";
@@ -632,6 +633,14 @@ function Marine() {
 
           <Reveal delay={120}>
             <div className="mt-12 border border-border bg-background p-7 md:p-9">
+              <img
+                src={diffusersImg}
+                alt="Polycarbonate and acrylic marine light diffusers"
+                loading="lazy"
+                width={1024}
+                height={768}
+                className="mb-7 h-56 w-full object-cover"
+              />
               <h3 className="text-2xl font-medium">PC &amp; Acrylic Marine Diffusers</h3>
               <p className="mt-3 text-sm text-muted-foreground">
                 84+ variants · Full range available · Custom sizes on request ·
