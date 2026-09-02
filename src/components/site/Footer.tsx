@@ -10,12 +10,12 @@ export function Footer() {
             <img
               src="/logo.png"
               alt="Spectrum Corporation industrial trading"
-              className="h-9 w-auto"
+              className="h-14 w-auto"
               loading="lazy"
-              width={840}
-              height={200}
+              width={1920}
+              height={539}
             />
-            <p className="mt-5 max-w-sm text-sm leading-relaxed text-muted-foreground">
+            <p className="mt-5 max-w-sm text-base leading-relaxed text-muted-foreground">
               Spectrum Corporation FZ LLC is a Dubai-based trading company supplying
               industrial steel, metals, construction materials and marine equipment across
               the UAE, GCC and international markets.
@@ -24,7 +24,7 @@ export function Footer() {
 
           <div>
             <p className="label-mono">Products</p>
-            <ul className="mt-4 space-y-2 text-sm">
+            <ul className="mt-4 space-y-2 text-base">
               <li>
                 <Link to="/coils-sheets" className="text-muted-foreground hover:text-primary">
                   Coils &amp; Sheets
@@ -45,7 +45,7 @@ export function Footer() {
 
           <div>
             <p className="label-mono">Company</p>
-            <ul className="mt-4 space-y-2 text-sm">
+            <ul className="mt-4 space-y-2 text-base">
               <li>
                 <Link to="/about" className="text-muted-foreground hover:text-primary">
                   About Spectrum
@@ -69,7 +69,7 @@ export function Footer() {
 
           <div>
             <p className="label-mono">Contact</p>
-            <ul className="mt-4 space-y-2 text-sm text-muted-foreground">
+            <ul className="mt-4 space-y-2 text-base text-muted-foreground">
               <li>
                 <a href="tel:+971585845601" className="hover:text-primary">
                   +971 58 584 5601
@@ -86,7 +86,7 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="mt-16 flex flex-col gap-2 border-t border-border pt-6 text-[11px] tracking-[0.18em] uppercase text-muted-foreground md:flex-row md:justify-between">
+        <div className="mt-16 flex flex-col gap-2 border-t border-border pt-6 text-sm tracking-[0.18em] uppercase text-muted-foreground md:flex-row md:justify-between">
           <span>© 2026 Spectrum Corporation FZ LLC</span>
           <span>Industrial Materials. Marine Equipment. Reliable Supply.</span>
         </div>

@@ -100,19 +100,19 @@ function Home() {
   return (
     <>
       {/* HERO — inverted band */}
-      <section className="dark relative flex min-h-screen items-end overflow-hidden bg-background text-foreground">
+      <section className="relative flex min-h-screen items-end overflow-hidden bg-background text-foreground">
         <video
-          className="absolute inset-0 h-full w-full object-cover"
+          className="absolute inset-0 h-full w-full object-cover brightness-125 contrast-105 saturate-110"
           src="/hero.mp4"
           poster="/hero-poster.jpg"
           autoPlay
           muted
           loop
           playsInline
-          preload="metadata"
+          preload="auto"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/75 to-background/50" />
-        <div className="bg-grid pointer-events-none absolute inset-0 opacity-40" />
+        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/70 to-background/15" />
+        <div className="bg-grid pointer-events-none absolute inset-0 opacity-30" />
         <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-primary/60 to-transparent" />
 
         <div className="relative mx-auto w-full max-w-[1400px] px-5 pt-40 pb-16 md:px-10 md:pb-20">
@@ -224,7 +224,7 @@ function Home() {
                 <Link
                   // eslint-disable-next-line @typescript-eslint/no-explicit-any
                   to={d.to as any}
-                  className="mt-9 inline-flex w-fit items-center gap-2 border-b border-primary pb-1 text-sm font-medium text-foreground transition-colors hover:text-primary"
+                  className="mt-9 inline-flex w-fit items-center gap-2 border-b border-primary pb-1 text-base font-medium text-foreground transition-colors hover:text-primary"
                 >
                   {d.cta}
                   <ArrowUpRight className="h-4 w-4" />
@@ -250,7 +250,7 @@ function Home() {
                 delay={i * 90}
                 className="group bg-background p-8 transition-colors duration-500 hover:bg-surface-2 md:p-10"
               >
-                <span className="font-mono text-sm text-primary">{c.k}</span>
+                <span className="font-mono text-base text-primary">{c.k}</span>
                 <h3 className="mt-6 text-2xl font-medium">{c.t}</h3>
                 <p className="mt-4 leading-relaxed text-muted-foreground">{c.b}</p>
                 <span className="mt-8 block h-px w-10 bg-primary transition-all duration-500 group-hover:w-24" />
@@ -295,7 +295,7 @@ function Home() {
               "Commercial & Infrastructure Development",
             ].map((t, i) => (
               <Reveal key={t} delay={i * 35}>
-                <span className="inline-block border border-border bg-card px-4 py-2 text-sm text-muted-foreground transition-colors hover:border-primary hover:text-foreground">
+                <span className="inline-block border border-border bg-card px-4 py-2 text-base text-muted-foreground transition-colors hover:border-primary hover:text-foreground">
                   {t}
                 </span>
               </Reveal>

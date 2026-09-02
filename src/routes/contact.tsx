@@ -48,7 +48,7 @@ function Contact() {
   }
 
   const field =
-    "w-full border border-border bg-surface-2 px-4 py-3.5 text-sm text-foreground outline-none transition-colors placeholder:text-muted-foreground focus:border-primary";
+    "w-full border border-border bg-surface-2 px-4 py-3.5 text-base text-foreground outline-none transition-colors placeholder:text-muted-foreground focus:border-primary";
 
   return (
     <>
@@ -135,7 +135,7 @@ function Contact() {
 
               <button
                 type="submit"
-                className="group inline-flex items-center gap-2 bg-primary px-7 py-4 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/85"
+                className="group inline-flex items-center gap-2 bg-primary px-7 py-4 text-base font-medium text-primary-foreground transition-colors hover:bg-primary/85"
               >
                 Send Request
                 <ArrowUpRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />

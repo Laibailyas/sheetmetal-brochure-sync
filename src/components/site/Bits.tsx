@@ -18,7 +18,7 @@ export function ButtonLink({
       // eslint-disable-next-line @typescript-eslint/no-explicit-any
       to={to as any}
       className={cn(
-        "group inline-flex items-center gap-2 px-6 py-3.5 text-sm font-medium transition-all duration-300",
+        "group inline-flex items-center gap-2 px-6 py-3.5 text-base font-medium transition-all duration-300",
         variant === "solid"
           ? "bg-primary text-primary-foreground hover:glow-ring hover:brightness-110"
           : "border border-border text-foreground hover:border-primary hover:bg-primary/10",
@@ -96,7 +96,7 @@ export function PageHero({
           <p className="label-mono">{breadcrumb}</p>
         </Reveal>
         <Reveal delay={60}>
-          <p className="mt-8 font-mono text-xs tracking-[0.3em] text-primary uppercase">
+          <p className="mt-8 font-mono text-sm tracking-[0.3em] text-primary uppercase">
             {index}
           </p>
         </Reveal>
@@ -266,13 +266,13 @@ export function SpecCard({
           {code ? <p className="label-mono text-primary">{code}</p> : null}
           <h3 className="mt-3 text-2xl leading-tight font-medium">{title}</h3>
           {subtitle ? (
-            <p className="mt-2 text-sm text-muted-foreground">{subtitle}</p>
+            <p className="mt-2 text-base text-muted-foreground">{subtitle}</p>
           ) : null}
 
           {features?.length ? (
             <ul className="mt-5 space-y-2.5">
               {features.map((f) => (
-                <li key={f} className="flex gap-3 text-sm leading-relaxed text-muted-foreground">
+                <li key={f} className="flex gap-3 text-base leading-relaxed text-muted-foreground">
                   <span className="mt-2 h-1.5 w-1.5 shrink-0 bg-primary" />
                   <span>{f}</span>
                 </li>
@@ -356,7 +356,7 @@ export function ImageTile({
           {kicker ? <p className="label-mono text-primary">{kicker}</p> : null}
           <p className="mt-3 text-lg font-medium">{title}</p>
           {body ? (
-            <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{body}</p>
+            <p className="mt-3 text-base leading-relaxed text-muted-foreground">{body}</p>
           ) : null}
         </div>
       </article>
@@ -380,7 +380,7 @@ export function BulletPanel({
         <h3 className="text-xl font-medium">{title}</h3>
         <ul className="mt-5 space-y-2.5">
           {items.map((i) => (
-            <li key={i} className="flex gap-3 text-sm leading-relaxed text-muted-foreground">
+            <li key={i} className="flex gap-3 text-base leading-relaxed text-muted-foreground">
               <span className="mt-2 h-1.5 w-1.5 shrink-0 bg-primary" />
               <span>{i}</span>
             </li>
