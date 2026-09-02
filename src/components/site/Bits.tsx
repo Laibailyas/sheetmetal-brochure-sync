@@ -324,7 +324,48 @@ export function CategoryBand({
   );
 }
 
+export function ImageTile({
+  image,
+  imageAlt,
+  kicker,
+  title,
+  body,
+  delay = 0,
+}: {
+  image: string;
+  imageAlt?: string;
+  kicker?: string;
+  title: string;
+  body?: string;
+  delay?: number;
+}) {
+  return (
+    <Reveal delay={delay} className="h-full">
+      <article className="group flex h-full flex-col overflow-hidden border border-border bg-card transition-all duration-500 hover:border-primary/60">
+        <div className="overflow-hidden border-b border-border">
+          <img
+            src={image}
+            alt={imageAlt ?? title}
+            loading="lazy"
+            width={1024}
+            height={768}
+            className="h-40 w-full object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-105"
+          />
+        </div>
+        <div className="flex flex-1 flex-col p-6">
+          {kicker ? <p className="label-mono text-primary">{kicker}</p> : null}
+          <p className="mt-3 text-lg font-medium">{title}</p>
+          {body ? (
+            <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{body}</p>
+          ) : null}
+        </div>
+      </article>
+    </Reveal>
+  );
+}
+
 export function BulletPanel({
+
   title,
   items,
   delay = 0,
