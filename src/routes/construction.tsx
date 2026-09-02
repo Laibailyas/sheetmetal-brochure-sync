@@ -327,11 +327,6 @@ function Construction() {
             <SpecCard key={p.title} {...p} delay={i * 80} />
           ))}
         </div>
-        <Reveal delay={120}>
-          <p className="mt-10 border border-primary/40 bg-primary/5 p-6 text-center font-mono text-sm tracking-wider uppercase text-foreground">
-            Prime Bright Bars · Non Alloy Shafting Bars
-          </p>
-        </Reveal>
       </section>
 
       <section className="relative overflow-hidden border-y border-border">
@@ -350,19 +345,16 @@ function Construction() {
             title="Steel Beams"
             intro="Full range of universal, wide flange and I-section beams and columns."
           />
-          <div className="mt-12 grid gap-px bg-border sm:grid-cols-2 lg:grid-cols-4">
+          <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
             {beams.map((b, i) => (
-              <Reveal
+              <ImageTile
                 key={b}
                 delay={i * 60}
-                className="group bg-background p-7 transition-colors duration-500 hover:bg-surface-2"
-              >
-                <span className="font-mono text-sm text-primary">
-                  {String(i + 1).padStart(2, "0")}
-                </span>
-                <p className="mt-4 text-lg leading-snug font-medium">{b}</p>
-                <span className="mt-6 block h-px w-8 bg-primary transition-all duration-500 group-hover:w-20" />
-              </Reveal>
+                image={i % 2 === 0 ? beamsImg : structuralImg}
+                imageAlt={`${b} steel sections stacked in a stockyard`}
+                kicker={String(i + 1).padStart(2, "0")}
+                title={b}
+              />
             ))}
           </div>
         </div>
