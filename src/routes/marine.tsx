@@ -6,13 +6,35 @@ import cablesImg from "@/assets/marine-cables.jpg";
 import lightingImg from "@/assets/marine-lighting.jpg";
 import hardwareImg from "@/assets/hardware-mro.jpg";
 import chequeredImg from "@/assets/chequered.jpg";
-import coilsImg from "@/assets/gi-coils.jpg";
+import controlValvesImg from "@/assets/control-valves.jpg";
+import asepticValveImg from "@/assets/aseptic-valve.jpg";
+import trunionValveImg from "@/assets/trunion-valve.jpg";
+import gateValveImg from "@/assets/gate-valve.jpg";
+import globeValveImg from "@/assets/globe-valve.jpg";
+import checkValveImg from "@/assets/check-valve.jpg";
+import butterflyValveImg from "@/assets/butterfly-valve.jpg";
+import powerCablesImg from "@/assets/power-cables.jpg";
+import subseaCablesImg from "@/assets/subsea-cables.jpg";
+import fiberCablesImg from "@/assets/fiber-cables.jpg";
+import controlCablesImg from "@/assets/control-cables.jpg";
+import carbonPipesImg from "@/assets/carbon-pipes.jpg";
+import couplingsImg from "@/assets/couplings-fittings.jpg";
+import steelPlatesImg from "@/assets/steel-plates.jpg";
+import hrcCrcImg from "@/assets/hrc-crc.jpg";
+import instrCablesImg from "@/assets/instrumentation-cables.jpg";
+import tubularBulbImg from "@/assets/tubular-bulb.jpg";
+import gasketsImg from "@/assets/gaskets.jpg";
+import weldingImg from "@/assets/welding.jpg";
+import handToolsImg from "@/assets/hand-tools.jpg";
+import marineElectricalImg from "@/assets/marine-electrical.jpg";
+import deckHardwareImg from "@/assets/deck-hardware.jpg";
 import { Marquee } from "@/components/site/Marquee";
 import { Reveal } from "@/components/site/Reveal";
 import {
   PageHero,
   CategoryBand,
   SpecCard,
+  ImageTile,
   BulletPanel,
   CTABand,
 } from "@/components/site/Bits";
@@ -74,6 +96,8 @@ const valves = [
   {
     code: "IV - 002",
     title: "Control Valves",
+    image: controlValvesImg,
+    imageAlt: "Pneumatic actuated control valves on industrial pipework",
     rows: [
       { label: "Valve Types", value: "Butterfly / Globe / Angle" },
       { label: "Actuation", value: "Pneumatic & motorized" },
@@ -83,6 +107,8 @@ const valves = [
   {
     code: "IV - 003",
     title: "Aseptic Block Valve",
+    image: asepticValveImg,
+    imageAlt: "Hygienic stainless steel aseptic block valve",
     rows: [
       { label: "Design", value: "Zero dead-leg" },
       { label: "Actuation", value: "PN actuated" },
@@ -93,6 +119,8 @@ const valves = [
   {
     code: "IV - 004",
     title: "Trunion Ball Valve",
+    image: trunionValveImg,
+    imageAlt: "Trunnion mounted flanged ball valve",
     rows: [
       { label: "Design", value: "Trunnion-mounted" },
       { label: "Actuation", value: "Pneumatic & motorized" },
@@ -103,18 +131,22 @@ const valves = [
 
 const oilGasValves = [
   {
+    img: gateValveImg,
     t: "Gate Valve",
     b: "Used for on/off control. Provides minimal flow resistance when fully open. Common in pipelines.",
   },
   {
+    img: globeValveImg,
     t: "Globe Valve",
     b: "Used for flow regulation and throttling. Provides precise flow control.",
   },
   {
+    img: checkValveImg,
     t: "Check Valve",
     b: "Allows flow in one direction only. Prevents backflow and protects equipment.",
   },
   {
+    img: butterflyValveImg,
     t: "Butterfly Valve",
     b: "Lightweight and compact. Used in large diameter pipelines. Quick operation.",
   },
@@ -122,22 +154,27 @@ const oilGasValves = [
 
 const oilGasCables = [
   {
+    img: powerCablesImg,
     t: "Power Cables",
     b: "Used to transmit electrical power. Armoured for protection in harsh environments.",
   },
   {
+    img: instrCablesImg,
     t: "Instrumentation Cables",
     b: "Transmit signals for monitoring and control systems. Shielded for EMI protection.",
   },
   {
+    img: subseaCablesImg,
     t: "Subsea Cables",
     b: "Used in offshore and underwater applications. Designed to withstand extreme conditions.",
   },
   {
+    img: fiberCablesImg,
     t: "Fiber Optic Cables",
     b: "High speed data transmission. Used for communication and system monitoring.",
   },
   {
+    img: controlCablesImg,
     t: "Control Cables",
     b: "Used for control, automation and interconnection. Multi-core cables for various applications.",
   },
@@ -159,6 +196,8 @@ const pipesFlanges = [
   {
     code: "PF - 002",
     title: "Carbon Steel Pipes",
+    image: carbonPipesImg,
+    imageAlt: "Seamless carbon steel pipes stacked in racks",
     rows: [
       { label: "Schedules", value: "40 & 80" },
       { label: "Construction", value: "Seamless ASTM A106 & ERW" },
@@ -169,6 +208,8 @@ const pipesFlanges = [
   {
     code: "PF - 003 · PF - 004",
     title: "Couplings, Connectors & Forged Fittings",
+    image: couplingsImg,
+    imageAlt: "Forged steel couplings, elbows, tees and connectors",
     rows: [
       {
         label: "Couplings",
@@ -189,8 +230,8 @@ const steelProducts = [
   {
     code: "SP - 001",
     title: "Steel Plates",
-    image: coilsImg,
-    imageAlt: "Steel coils and plates in a warehouse",
+    image: steelPlatesImg,
+    imageAlt: "Stacked mild steel plates of varying thickness",
     rows: [
       { label: "Materials", value: "MS / SS / Alloy grades" },
       { label: "Standards", value: "A36 to 316SS" },
@@ -201,6 +242,8 @@ const steelProducts = [
   {
     code: "SP - 002",
     title: "Hot Rolled, Cold Rolled & Coils",
+    image: hrcCrcImg,
+    imageAlt: "Hot rolled and cold rolled steel coils in a mill warehouse",
     rows: [
       { label: "HRC", value: "Widths 600–2000mm, various grades" },
       { label: "CRC", value: "Smooth finish for precision applications" },
@@ -237,6 +280,8 @@ const marineCables = [
   {
     code: "CB - 002 / 003",
     title: "Instrumentation & Flexible Cables",
+    image: instrCablesImg,
+    imageAlt: "Drums of marine instrumentation and flexible cables",
     features: [
       "Marine-grade armoured instrumentation",
       "Steel wire / braid armour options",
@@ -261,6 +306,8 @@ const lighting = [
   {
     code: "LT - 002 · Marine Bulb (T-Type)",
     title: "Tubular Marine Bulb (T-Type)",
+    image: tubularBulbImg,
+    imageAlt: "Tubular T-type marine light bulbs",
     features: [
       "E27/E14 base, 15W–40W",
       "Ideal for navigation & instrument panels",
@@ -297,6 +344,8 @@ const hardware = [
   {
     code: "HW - 002",
     title: "Gaskets & O-Rings",
+    image: gasketsImg,
+    imageAlt: "Spiral wound gaskets, PTFE gaskets and rubber O-rings",
     features: [
       "PTFE, rubber & spiral wound metal gaskets",
       "O-rings in NBR, EPDM, Viton",
@@ -306,6 +355,8 @@ const hardware = [
   {
     code: "HW - 003",
     title: "Welding Supplies",
+    image: weldingImg,
+    imageAlt: "Welding electrodes, wire spools, cutting discs and helmets",
     features: [
       "Electrodes, MIG/TIG wire, cutting discs, PPE & all welding consumables",
       "Lincoln, ESAB & equivalent brands stocked",
@@ -314,6 +365,8 @@ const hardware = [
   {
     code: "HW - 004",
     title: "Pipe Threading & Hand Tools",
+    image: handToolsImg,
+    imageAlt: "Pipe threading dies, socket sets and hand tools",
     features: [
       "Pipe threading dies, socket sets, hydraulic jacks",
       "Site equipment and hand tools for marine & industrial applications",
@@ -322,6 +375,8 @@ const hardware = [
   {
     code: "HW - 005",
     title: "Marine Electrical & Instrumentation",
+    image: marineElectricalImg,
+    imageAlt: "Marine electrical switchboard, connectors and instrumentation",
     features: [
       "Cables, connectors, switches, sensors and control systems",
       "For marine and industrial use — reliable and certified components",
@@ -330,6 +385,8 @@ const hardware = [
   {
     code: "HW - 006",
     title: "Deck & Hardware Supplies",
+    image: deckHardwareImg,
+    imageAlt: "Marine deck fittings, shackles and hardware accessories",
     features: [
       "Marine deck fittings, cleats, shackles, turnbuckles",
       "Hardware accessories for all vessel types — built for strength and durability",
@@ -396,22 +453,28 @@ function Marine() {
             <h3 className="text-2xl font-medium md:text-3xl">
               Valves &amp; Cables — Oil &amp; Gas Reference Guide
             </h3>
-            <div className="mt-8 grid gap-px bg-border sm:grid-cols-2 lg:grid-cols-4">
+            <div className="mt-8 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
               {oilGasValves.map((v, i) => (
-                <Reveal key={v.t} delay={i * 70} className="bg-background p-7">
-                  <p className="label-mono text-primary">Valve</p>
-                  <p className="mt-3 text-lg font-medium">{v.t}</p>
-                  <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{v.b}</p>
-                </Reveal>
+                <ImageTile
+                  key={v.t}
+                  delay={i * 70}
+                  image={v.img}
+                  kicker="Valve"
+                  title={v.t}
+                  body={v.b}
+                />
               ))}
             </div>
-            <div className="mt-px grid gap-px bg-border sm:grid-cols-2 lg:grid-cols-5">
+            <div className="mt-8 grid gap-8 sm:grid-cols-2 lg:grid-cols-5">
               {oilGasCables.map((v, i) => (
-                <Reveal key={v.t} delay={i * 70} className="bg-background p-7">
-                  <p className="label-mono text-primary">Cable</p>
-                  <p className="mt-3 text-lg font-medium">{v.t}</p>
-                  <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{v.b}</p>
-                </Reveal>
+                <ImageTile
+                  key={v.t}
+                  delay={i * 70}
+                  image={v.img}
+                  kicker="Cable"
+                  title={v.t}
+                  body={v.b}
+                />
               ))}
             </div>
             <div className="mt-10 grid gap-px bg-border sm:grid-cols-2 lg:grid-cols-4">
