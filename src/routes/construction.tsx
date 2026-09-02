@@ -12,7 +12,6 @@ import squareBarsImg from "@/assets/square-bars.jpg";
 import rebarImg from "@/assets/rebar.jpg";
 import brightBarsImg from "@/assets/bright-bars.jpg";
 import shaftingBarsImg from "@/assets/shafting-bars.jpg";
-import beamsImg from "@/assets/beams.jpg";
 import beamUbImg from "@/assets/beam-ub.jpg";
 import beamUcImg from "@/assets/beam-uc.jpg";
 import beamPileImg from "@/assets/beam-pile.jpg";

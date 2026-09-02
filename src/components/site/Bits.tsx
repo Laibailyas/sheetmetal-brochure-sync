@@ -148,7 +148,7 @@ export function ProductRow({
             loading="lazy"
             width={1400}
             height={1000}
-            className="h-[300px] w-full object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-105 md:h-[460px]"
+            className="aspect-[4/3] w-full object-cover object-center transition-transform duration-[1200ms] ease-out group-hover:scale-105"
           />
           <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-background/70 to-transparent" />
           <div className="pointer-events-none absolute inset-x-0 top-0 h-16 bg-gradient-to-b from-primary/25 to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
