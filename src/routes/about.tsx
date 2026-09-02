@@ -272,7 +272,7 @@ function About() {
           <div className="mt-12 flex flex-wrap gap-2">
             {industries.map((t, i) => (
               <Reveal key={t} delay={i * 35}>
-                <span className="inline-block border border-border bg-card px-4 py-2 text-sm text-muted-foreground transition-colors hover:border-primary hover:text-foreground">
+                <span className="inline-block border border-border bg-card px-4 py-2 text-base text-muted-foreground transition-colors hover:border-primary hover:text-foreground">
                   {t}
                 </span>
               </Reveal>
@@ -325,7 +325,7 @@ function About() {
                 delay={i * 80}
                 className="group bg-background p-8 transition-colors duration-500 hover:bg-surface-2 md:p-10"
               >
-                <span className="font-mono text-sm text-primary">
+                <span className="font-mono text-base text-primary">
                   {String(i + 1).padStart(2, "0")}
                 </span>
                 <h3 className="mt-6 text-2xl font-medium">{c.t}</h3>

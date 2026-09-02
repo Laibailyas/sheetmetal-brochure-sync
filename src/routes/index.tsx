@@ -224,7 +224,7 @@ function Home() {
                 <Link
                   // eslint-disable-next-line @typescript-eslint/no-explicit-any
                   to={d.to as any}
-                  className="mt-9 inline-flex w-fit items-center gap-2 border-b border-primary pb-1 text-sm font-medium text-foreground transition-colors hover:text-primary"
+                  className="mt-9 inline-flex w-fit items-center gap-2 border-b border-primary pb-1 text-base font-medium text-foreground transition-colors hover:text-primary"
                 >
                   {d.cta}
                   <ArrowUpRight className="h-4 w-4" />
@@ -250,7 +250,7 @@ function Home() {
                 delay={i * 90}
                 className="group bg-background p-8 transition-colors duration-500 hover:bg-surface-2 md:p-10"
               >
-                <span className="font-mono text-sm text-primary">{c.k}</span>
+                <span className="font-mono text-base text-primary">{c.k}</span>
                 <h3 className="mt-6 text-2xl font-medium">{c.t}</h3>
                 <p className="mt-4 leading-relaxed text-muted-foreground">{c.b}</p>
                 <span className="mt-8 block h-px w-10 bg-primary transition-all duration-500 group-hover:w-24" />
@@ -295,7 +295,7 @@ function Home() {
               "Commercial & Infrastructure Development",
             ].map((t, i) => (
               <Reveal key={t} delay={i * 35}>
-                <span className="inline-block border border-border bg-card px-4 py-2 text-sm text-muted-foreground transition-colors hover:border-primary hover:text-foreground">
+                <span className="inline-block border border-border bg-card px-4 py-2 text-base text-muted-foreground transition-colors hover:border-primary hover:text-foreground">
                   {t}
                 </span>
               </Reveal>

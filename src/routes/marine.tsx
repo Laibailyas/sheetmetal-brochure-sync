@@ -495,7 +495,7 @@ function Marine() {
               ))}
             </div>
             <Reveal delay={120}>
-              <p className="mt-10 text-sm leading-relaxed text-muted-foreground">
+              <p className="mt-10 text-base leading-relaxed text-muted-foreground">
                 <span className="font-medium text-foreground">
                   Industrial Applications — Offshore &amp; Oil &amp; Gas:
                 </span>{" "}
@@ -642,12 +642,12 @@ function Marine() {
                 className="mb-7 aspect-[4/3] w-full object-cover object-center"
               />
               <h3 className="text-2xl font-medium">PC &amp; Acrylic Marine Diffusers</h3>
-              <p className="mt-3 text-sm text-muted-foreground">
+              <p className="mt-3 text-base text-muted-foreground">
                 84+ variants · Full range available · Custom sizes on request ·
                 Documentation available · Transparent &amp; milky finish
               </p>
               <div className="mt-8 overflow-x-auto">
-                <table className="w-full min-w-[520px] border-collapse text-left text-sm">
+                <table className="w-full min-w-[520px] border-collapse text-left text-base">
                   <thead>
                     <tr className="border-b border-border">
                       <th className="label-mono py-3 pr-6">Code</th>

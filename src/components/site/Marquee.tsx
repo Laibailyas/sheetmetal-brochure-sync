@@ -6,7 +6,7 @@ export function Marquee({ items }: { items: string[] }) {
         {row.map((item, i) => (
           <span
             key={`${item}-${i}`}
-            className="flex items-center gap-10 font-display text-sm tracking-[0.2em] uppercase text-muted-foreground"
+            className="flex items-center gap-10 font-display text-base tracking-[0.2em] uppercase text-muted-foreground"
           >
             {item}
             <span className="h-1.5 w-1.5 rotate-45 bg-primary" />

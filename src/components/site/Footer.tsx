@@ -86,7 +86,7 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="mt-16 flex flex-col gap-2 border-t border-border pt-6 text-xs tracking-[0.18em] uppercase text-muted-foreground md:flex-row md:justify-between">
+        <div className="mt-16 flex flex-col gap-2 border-t border-border pt-6 text-sm tracking-[0.18em] uppercase text-muted-foreground md:flex-row md:justify-between">
           <span>© 2026 Spectrum Corporation FZ LLC</span>
           <span>Industrial Materials. Marine Equipment. Reliable Supply.</span>
         </div>
