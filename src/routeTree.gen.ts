@@ -10,33 +10,92 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as AboutRouteImport } from './routes/about'
+import { Route as CoilsSheetsRouteImport } from './routes/coils-sheets'
+import { Route as ConstructionRouteImport } from './routes/construction'
+import { Route as ContactRouteImport } from './routes/contact'
+import { Route as MarineRouteImport } from './routes/marine'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const AboutRoute = AboutRouteImport.update({
+  id: '/about',
+  path: '/about',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CoilsSheetsRoute = CoilsSheetsRouteImport.update({
+  id: '/coils-sheets',
+  path: '/coils-sheets',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ConstructionRoute = ConstructionRouteImport.update({
+  id: '/construction',
+  path: '/construction',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ContactRoute = ContactRouteImport.update({
+  id: '/contact',
+  path: '/contact',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const MarineRoute = MarineRouteImport.update({
+  id: '/marine',
+  path: '/marine',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/coils-sheets': typeof CoilsSheetsRoute
+  '/construction': typeof ConstructionRoute
+  '/contact': typeof ContactRoute
+  '/marine': typeof MarineRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/coils-sheets': typeof CoilsSheetsRoute
+  '/construction': typeof ConstructionRoute
+  '/contact': typeof ContactRoute
+  '/marine': typeof MarineRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/coils-sheets': typeof CoilsSheetsRoute
+  '/construction': typeof ConstructionRoute
+  '/contact': typeof ContactRoute
+  '/marine': typeof MarineRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths:
+    '/' | '/about' | '/coils-sheets' | '/construction' | '/contact' | '/marine'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to:
+    '/' | '/about' | '/coils-sheets' | '/construction' | '/contact' | '/marine'
+  id:
+    | '__root__'
+    | '/'
+    | '/about'
+    | '/coils-sheets'
+    | '/construction'
+    | '/contact'
+    | '/marine'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AboutRoute: typeof AboutRoute
+  CoilsSheetsRoute: typeof CoilsSheetsRoute
+  ConstructionRoute: typeof ConstructionRoute
+  ContactRoute: typeof ContactRoute
+  MarineRoute: typeof MarineRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -48,11 +107,51 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/about': {
+      id: '/about'
+      path: '/about'
+      fullPath: '/about'
+      preLoaderRoute: typeof AboutRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/coils-sheets': {
+      id: '/coils-sheets'
+      path: '/coils-sheets'
+      fullPath: '/coils-sheets'
+      preLoaderRoute: typeof CoilsSheetsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/construction': {
+      id: '/construction'
+      path: '/construction'
+      fullPath: '/construction'
+      preLoaderRoute: typeof ConstructionRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/contact': {
+      id: '/contact'
+      path: '/contact'
+      fullPath: '/contact'
+      preLoaderRoute: typeof ContactRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/marine': {
+      id: '/marine'
+      path: '/marine'
+      fullPath: '/marine'
+      preLoaderRoute: typeof MarineRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AboutRoute: AboutRoute,
+  CoilsSheetsRoute: CoilsSheetsRoute,
+  ConstructionRoute: ConstructionRoute,
+  ContactRoute: ContactRoute,
+  MarineRoute: MarineRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
