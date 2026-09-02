@@ -90,6 +90,8 @@ const anglesChannels = [
   {
     code: "SA - 003",
     title: "Steel Unequal Angles",
+    image: unequalAnglesImg,
+    imageAlt: "Stacks of steel unequal angle profiles",
     rows: [
       { label: "Size", value: "65mm x 50mm – 200mm x 150mm" },
       { label: "Standard", value: "GB/T 9787/88, JIS G 3192-2006, EN 10056" },
@@ -116,6 +118,8 @@ const pipesTubes = [
   {
     code: "PT - 002",
     title: "ERW & Seamless Pipes",
+    image: erwImg,
+    imageAlt: "Bundles of ERW and seamless carbon steel pipes",
     rows: [
       { label: "Size", value: '½" NB – 16" NB' },
       { label: "Standard", value: "API 5L, GB/T 9711" },
@@ -129,6 +133,8 @@ const pipesTubes = [
   {
     code: "PT - 003",
     title: "Galvanized Pipe",
+    image: galvPipeImg,
+    imageAlt: "Stack of galvanized steel pipes with zinc finish",
     rows: [
       { label: "Size", value: "OD 21.3mm – 609.6mm" },
       { label: "Standard", value: "IS 1239, BS 1387, ASTM A53" },
@@ -163,6 +169,8 @@ const bars = [
   {
     code: "BR - 002",
     title: "Round Bars",
+    image: roundBarsImg,
+    imageAlt: "Bundle of solid steel round bars",
     rows: [
       { label: "Size", value: "4mm – 100mm" },
       { label: "Standard", value: "DIN EN 10060:2004" },
@@ -172,6 +180,8 @@ const bars = [
   {
     code: "BR - 003",
     title: "Square Bars",
+    image: squareBarsImg,
+    imageAlt: "Bundle of solid steel square bars",
     rows: [
       { label: "Size", value: "12x12 – 100x100" },
       { label: "Standard", value: "DIN EN 10059:2004" },
@@ -187,6 +197,28 @@ const bars = [
       { label: "Size", value: "6mm – 36mm" },
       { label: "Standard", value: "BS4449/1997, 2005" },
       { label: "Steel Grade", value: "460B" },
+    ],
+  },
+  {
+    code: "BR - 005",
+    title: "Prime Bright Bars",
+    image: brightBarsImg,
+    imageAlt: "Polished prime bright steel bars in a rack",
+    rows: [
+      { label: "Finish", value: "Cold drawn, ground & polished bright finish" },
+      { label: "Sections", value: "Round, square & hexagonal" },
+      { label: "Steel Grade", value: "EN1A, EN8, EN19, S275 JR / ASTM A36 equivalents" },
+    ],
+  },
+  {
+    code: "BR - 006",
+    title: "Non-Alloy Shafting Bars",
+    image: shaftingBarsImg,
+    imageAlt: "Machined non-alloy steel shafting bars",
+    rows: [
+      { label: "Type", value: "Non-alloy carbon steel shafting" },
+      { label: "Finish", value: "Machined, turned & smooth cylindrical surface" },
+      { label: "Application", value: "Shafts, pins, machined components & general engineering" },
     ],
   },
 ];
@@ -217,6 +249,8 @@ const gratingsMesh = [
   {
     code: "GM - 002",
     title: "Expanded Mesh",
+    image: expandedMeshImg,
+    imageAlt: "Stacked sheets of galvanized expanded metal mesh",
     rows: [
       { label: "Size", value: "1219mm x 2438mm · Thickness 1.8mm – 10mm" },
       { label: "Standard", value: "JIS" },
