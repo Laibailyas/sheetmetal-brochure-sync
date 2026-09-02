@@ -639,7 +639,7 @@ function Marine() {
                 loading="lazy"
                 width={1024}
                 height={768}
-                className="mb-7 h-56 w-full object-cover"
+                className="mb-7 aspect-[4/3] w-full object-cover object-center"
               />
               <h3 className="text-2xl font-medium">PC &amp; Acrylic Marine Diffusers</h3>
               <p className="mt-3 text-sm text-muted-foreground">

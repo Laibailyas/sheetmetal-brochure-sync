@@ -257,7 +257,7 @@ export function SpecCard({
               loading="lazy"
               width={1400}
               height={1000}
-              className="h-52 w-full object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-105"
+              className="aspect-[4/3] w-full object-cover object-center transition-transform duration-[1200ms] ease-out group-hover:scale-105"
             />
           </div>
         ) : null}
@@ -349,7 +349,7 @@ export function ImageTile({
             loading="lazy"
             width={1024}
             height={768}
-            className="h-40 w-full object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-105"
+            className="aspect-[4/3] w-full object-cover object-center transition-transform duration-[1200ms] ease-out group-hover:scale-105"
           />
         </div>
         <div className="flex flex-1 flex-col p-6">

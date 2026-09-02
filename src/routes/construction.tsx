@@ -224,14 +224,14 @@ const bars = [
 ];
 
 const beams = [
-  "Universal Beams (UB)",
-  "Universal Columns (UC)",
-  "Universal Bearing Piles",
-  "American Wide Flange Beams (W-Section)",
-  "European Flange Beams (HE-Section)",
-  "European I Beams (IPE-Section)",
-  "European I Beams (IPN-Section)",
-  "Japanese Wide Flange Beams",
+  { title: "Universal Beams (UB)", image: beamUbImg },
+  { title: "Universal Columns (UC)", image: beamUcImg },
+  { title: "Universal Bearing Piles", image: beamPileImg },
+  { title: "American Wide Flange Beams (W-Section)", image: beamWImg },
+  { title: "European Flange Beams (HE-Section)", image: beamHeImg },
+  { title: "European I Beams (IPE-Section)", image: beamIpeImg },
+  { title: "European I Beams (IPN-Section)", image: beamIpnImg },
+  { title: "Japanese Wide Flange Beams", image: beamJisImg },
 ];
 
 const gratingsMesh = [
