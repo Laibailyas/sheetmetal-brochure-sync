@@ -17,11 +17,11 @@ import structuralImg from "@/assets/structural.jpg";
 import gratingsImg from "@/assets/gratings.jpg";
 import expandedMeshImg from "@/assets/expanded-mesh.jpg";
 import { Marquee } from "@/components/site/Marquee";
-import { Reveal } from "@/components/site/Reveal";
 import {
   PageHero,
   CategoryBand,
   SpecCard,
+  ImageTile,
   CTABand,
 } from "@/components/site/Bits";
 
