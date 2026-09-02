@@ -13,6 +13,14 @@ import rebarImg from "@/assets/rebar.jpg";
 import brightBarsImg from "@/assets/bright-bars.jpg";
 import shaftingBarsImg from "@/assets/shafting-bars.jpg";
 import beamsImg from "@/assets/beams.jpg";
+import beamUbImg from "@/assets/beam-ub.jpg";
+import beamUcImg from "@/assets/beam-uc.jpg";
+import beamPileImg from "@/assets/beam-pile.jpg";
+import beamWImg from "@/assets/beam-w.jpg";
+import beamHeImg from "@/assets/beam-he.jpg";
+import beamIpeImg from "@/assets/beam-ipe.jpg";
+import beamIpnImg from "@/assets/beam-ipn.jpg";
+import beamJisImg from "@/assets/beam-jis.jpg";
 import structuralImg from "@/assets/structural.jpg";
 import gratingsImg from "@/assets/gratings.jpg";
 import expandedMeshImg from "@/assets/expanded-mesh.jpg";
@@ -348,12 +356,12 @@ function Construction() {
           <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
             {beams.map((b, i) => (
               <ImageTile
-                key={b}
+                key={b.title}
                 delay={i * 60}
-                image={i % 2 === 0 ? beamsImg : structuralImg}
-                imageAlt={`${b} steel sections stacked in a stockyard`}
+                image={b.image}
+                imageAlt={`${b.title} steel sections stacked in a stockyard`}
                 kicker={String(i + 1).padStart(2, "0")}
-                title={b}
+                title={b.title}
               />
             ))}
           </div>
