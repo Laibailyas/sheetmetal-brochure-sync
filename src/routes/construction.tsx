@@ -1,12 +1,21 @@
 import { createFileRoute } from "@tanstack/react-router";
 import channelsImg from "@/assets/channels.jpg";
 import anglesImg from "@/assets/angles.jpg";
+import unequalAnglesImg from "@/assets/unequal-angles.jpg";
 import pipesImg from "@/assets/pipes.jpg";
+import erwImg from "@/assets/erw-seamless.jpg";
+import galvPipeImg from "@/assets/galvanized-pipe.jpg";
 import tubesImg from "@/assets/tubes.jpg";
 import barsImg from "@/assets/bars.jpg";
+import roundBarsImg from "@/assets/round-bars.jpg";
+import squareBarsImg from "@/assets/square-bars.jpg";
 import rebarImg from "@/assets/rebar.jpg";
+import brightBarsImg from "@/assets/bright-bars.jpg";
+import shaftingBarsImg from "@/assets/shafting-bars.jpg";
+import beamsImg from "@/assets/beams.jpg";
 import structuralImg from "@/assets/structural.jpg";
 import gratingsImg from "@/assets/gratings.jpg";
+import expandedMeshImg from "@/assets/expanded-mesh.jpg";
 import { Marquee } from "@/components/site/Marquee";
 import { Reveal } from "@/components/site/Reveal";
 import {
