@@ -36,10 +36,10 @@ function Coil() {
         <mesh key={i} rotation-x={Math.PI / 2} position-y={-0.42 + i * 0.14}>
           <torusGeometry args={[1.5 + (i % 2) * 0.012, 0.02, 12, 160]} />
           <meshStandardMaterial
-            color="#1d4ed8"
+            color="#062547"
             metalness={0.9}
             roughness={0.3}
-            emissive="#1d4ed8"
+            emissive="#062547"
             emissiveIntensity={0.35}
           />
         </mesh>
@@ -86,12 +86,12 @@ export default function SteelScene() {
     >
       <ambientLight intensity={0.5} />
       <directionalLight position={[5, 6, 4]} intensity={2.1} color="#cfe0ff" />
-      <directionalLight position={[-6, -2, -4]} intensity={1.1} color="#2563eb" />
+      <directionalLight position={[-6, -2, -4]} intensity={1.1} color="#0a3160" />
       <Suspense fallback={null}>
         <Coil />
         <Beam position={[-2.9, 0.4, -1]} rotation={[0.4, 0.2, 0.5]} />
         <Beam position={[3.0, -0.6, -1.4]} rotation={[-0.3, 0.5, -0.6]} />
-        <Beam position={[2.4, 1.4, -2.2]} rotation={[0.9, 0, 0.2]} color="#3b6fd4" />
+        <Beam position={[2.4, 1.4, -2.2]} rotation={[0.9, 0, 0.2]} color="#123f73" />
         <Environment>
           <Lightformer
             intensity={3}
@@ -101,7 +101,7 @@ export default function SteelScene() {
           />
           <Lightformer
             intensity={2.2}
-            color="#1d4ed8"
+            color="#062547"
             position={[-6, 1, -1]}
             rotation-y={Math.PI / 2}
             scale={[18, 3, 1]}
