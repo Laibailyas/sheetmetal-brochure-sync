@@ -51,19 +51,19 @@
   --card-foreground: oklch(0.19 0.018 260);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.19 0.018 260);
-  --primary: oklch(0.47 0.208 262);
+  --primary: oklch(0.264 0.073 254);
   --primary-foreground: oklch(0.99 0 0);
   --secondary: oklch(0.95 0.006 250);
   --secondary-foreground: oklch(0.22 0.018 260);
   --muted: oklch(0.96 0.005 250);
   --muted-foreground: oklch(0.48 0.015 258);
-  --accent: oklch(0.55 0.19 250);
+  --accent: oklch(0.42 0.13 254);
   --accent-foreground: oklch(0.99 0 0);
   --destructive: oklch(0.58 0.22 25);
   --destructive-foreground: oklch(0.99 0 0);
   --border: oklch(0.9 0.008 255);
   --input: oklch(0.9 0.008 255);
-  --ring: oklch(0.47 0.208 262);
+  --ring: oklch(0.264 0.073 254);
   --surface: oklch(0.975 0.003 250);
   --surface-2: oklch(0.94 0.006 252);
   --steel: oklch(0.42 0.02 250);
@@ -72,10 +72,10 @@
   --panel-border: oklch(0.2 0.02 260 / 0.1);
   --gradient-blue: linear-gradient(
     135deg,
-    oklch(0.47 0.208 262),
-    oklch(0.58 0.16 236)
+    oklch(0.264 0.073 254),
+    oklch(0.45 0.13 250)
   );
-  --shadow-glow: 0 20px 60px -28px oklch(0.47 0.208 262 / 0.55);
+  --shadow-glow: 0 20px 60px -28px oklch(0.264 0.073 254 / 0.55);
 }
 
 /* Inverted band — used for the hero and footer on the light site. */
@@ -86,24 +86,24 @@
   --card-foreground: oklch(0.97 0.004 250);
   --popover: oklch(0.2 0.014 260);
   --popover-foreground: oklch(0.97 0.004 250);
-  --primary: oklch(0.62 0.2 258);
+  --primary: oklch(0.55 0.14 254);
   --primary-foreground: oklch(0.99 0 0);
   --secondary: oklch(0.26 0.016 260);
   --secondary-foreground: oklch(0.97 0.004 250);
   --muted: oklch(0.24 0.014 260);
   --muted-foreground: oklch(0.74 0.014 258);
-  --accent: oklch(0.62 0.19 250);
+  --accent: oklch(0.6 0.14 254);
   --accent-foreground: oklch(0.99 0 0);
   --border: oklch(0.32 0.016 260);
   --input: oklch(0.32 0.016 260);
-  --ring: oklch(0.62 0.2 258);
+  --ring: oklch(0.55 0.14 254);
   --surface: oklch(0.19 0.013 260);
   --surface-2: oklch(0.23 0.015 260);
   --steel: oklch(0.8 0.02 250);
   --grid-line: oklch(1 0 0 / 0.06);
   --panel: oklch(0.22 0.014 260 / 0.6);
   --panel-border: oklch(1 0 0 / 0.1);
-  --shadow-glow: 0 24px 80px -32px oklch(0.55 0.216 262 / 0.7);
+  --shadow-glow: 0 24px 80px -32px oklch(0.5 0.14 254 / 0.7);
   color: var(--foreground);
 }
 
